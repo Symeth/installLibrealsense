@@ -4,12 +4,14 @@
 # MIT License
 # sudo apt-get update && sudo apt-get upgrade ; done by glfw3
 # Install glfw3 3.1.2 ; Jetson TK1 currently has issues with later releases
-./install_glfw3.sh
+#./install_glfw3.sh
 sudo apt-get install libusb-1.0-0-dev
 # Install librealsense into home directory
 cd ~/
 git clone https://github.com/IntelRealSense/librealsense.git
 cd librealsense
+scripts/./install_glfw3.sh
+
 # Checkout version 0.9.2 of librealsense, last tested version
 git checkout v0.9.2
 # git checkout 495d18667aba615a3e19501ce96e28492a71b46e
